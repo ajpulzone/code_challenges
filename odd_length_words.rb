@@ -12,6 +12,7 @@ require "pry"
 def odd_length_reverse(string)
   array = string.split(" ")
   array.map do |word|
+    #could also write the below as " word.lenth.odd? ? word.reverse! : word " all on one line ()"
     if word.length.odd?
       word.reverse!
     end
@@ -20,3 +21,8 @@ def odd_length_reverse(string)
 end
 
 p odd_length_reverse("Drake is a good dog")
+
+#Another way to write it (Gabe's solution)
+#def reverse_odd(string)
+#string.split.each { |word| word.reverse! if word.size % 2 != 0 }.join(" ")
+#end
