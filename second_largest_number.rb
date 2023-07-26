@@ -34,7 +34,5 @@ def second_largest_number(array)
       # array[-2]
 end
 
-#email solution to 
-
 p second_largest_number([10, 40, 30, 20, 50])
 p second_largest_number([54, 23, 11, 17, 10])
