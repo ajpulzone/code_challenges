@@ -13,6 +13,7 @@ require "pry"
 # Notes
 # Make sure to return an array.
 
+#my solution
 def fizz_buzz(integer)
   (1..integer).map do |number|
     if number % 5 == 0 && number % 3 == 0
@@ -27,4 +28,16 @@ def fizz_buzz(integer)
   end
 end
 
-p fizz_buzz(33)
+# p fizz_buzz(33)
+
+#Gabe solution (refactored)
+# def fizz_buzz(int)
+#   (1..int).map do |i|
+#     result = ""
+#     result += "Fizz" if i % 3 == 0
+#     result += "Buzz" if i % 5 == 0
+#     result.empty? ? i : result
+#   end 
+# end
+
+# p fizz_buzz(33)
